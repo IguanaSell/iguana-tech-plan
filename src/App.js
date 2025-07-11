@@ -12,7 +12,7 @@ const planData = {
       { title: "La Oportunidad", content: "Capitalizar una oportunidad única comercializando un conjunto de herramientas SaaS B2B, ya desarrolladas y probadas con éxito en Iguana Sell, para resolver la fragmentación de datos y la ineficiencia operativa de los comerciantes de Shopify." },
       { title: "El Producto", content: "Lanzar aplicaciones modulares (Recuperación de Ventas y Logística Paperless) en la Shopify App Store con una estrategia de 'Land and Expand', para consolidarlas a largo plazo en una suite integrada." },
       { title: "Mercado y Tracción", content: "El mercado objetivo inicial son los más de 46,000 comerciantes de Shopify Plus. La validación se basa en los resultados tangibles de Iguana Sell: +849 ventas recuperadas y una reducción del 90% en el tiempo de gestión de envíos." },
-      { title: "Requerimiento Financiero", content: "Se busca una ronda de financiación inicial de 650.000 € para un runway de 24 meses, destinados a desarrollo (50%), ventas y marketing (35%), y G&A (15%). Se proyecta alcanzar el punto de equilibrio en 12 meses." },
+      { title: "Requerimiento Financiero", content: "Se busca una ronda de financiación inicial de 650.000 € para un runway de 24 meses, destinados a desarrollo (50%), ventas y marketing (35%), y G&A (15%). Se proyecta alcanzar el punto de equilibrio dentro del runway de la financiación." },
     ]
   },
   opportunity: {
@@ -35,14 +35,13 @@ const planData = {
     modules: [
         { 
             name: "Iguana Revenue Recovery", 
-            code: "A.5, A.6", 
+            code: "A.6", 
             description: "Recupera ventas perdidas a largo plazo que tus otras apps ignoran, conectando la intención de compra pasada con la disponibilidad de stock actual.", 
             user: "Director de E-commerce", 
             status: "Funcional, requiere UI/UX.",
-            roi: "Recupera un 18% de las oportunidades que otras herramientas dan por perdidas.",
+            roi: "Aumento directo de los ingresos recuperando ventas que se daban por perdidas para siempre.",
             features: [
                 { name: "Recuperador Proactivo de Ventas", code: "A.6", description: "Identifica y gestiona carritos abandonados, consultas de stock (ETD) y pedidos cancelados, contactando al cliente cuando la oportunidad de venta se reactiva." },
-                { name: "Gestor Inteligente de Colecciones", code: "A.5", description: "Ordena automáticamente los productos dentro de las colecciones de Shopify basándose en popularidad (hits), novedad o precio para maximizar la conversión." },
                 { name: "Constructor de Perfiles de Interés", code: "A.6.3", description: "Registra los intereses de producto de cada cliente a largo plazo para futuras campañas de marketing hiper-segmentadas." }
             ]
         },
@@ -52,7 +51,7 @@ const planData = {
             description: "Automatiza el 100% de tu documentación aduanera internacional, incluso para bundles complejos, eliminando errores y ahorrando horas de trabajo manual.", 
             user: "Jefe de Operaciones", 
             status: "Funcional, requiere parametrización.",
-            roi: "Reduce el tiempo de gestión de envíos internacionales en más de un 90%.",
+            roi: "Reducción drástica de costes operativos, eliminación de riesgo operacional y aumento de la satisfacción del cliente por la rapidez en aduanas.",
             features: [
                 { name: "Generación Automática de Etiquetas", code: "B.1", description: "Crea etiquetas de envío para múltiples transportistas (DHL, Fedex) sin intervención manual." },
                 { name: "Documentación Aduanera Paperless", code: "B.1", description: "Genera y transmite electrónicamente facturas comerciales y declaraciones aduaneras, acelerando el despacho en aduanas." },
@@ -61,15 +60,16 @@ const planData = {
         },
         { 
             name: "Iguana Catalog Intel", 
-            code: "A.1-A.4, A.7", 
+            code: "A.1-A.5, A.7", 
             description: "Enriquece y optimiza tu catálogo de productos, integrando stock de proveedores, analizando la calidad de los anuncios y priorizando SKUs clave.", 
             user: "Brand Manager", 
             status: "Funcional, requiere modularización.",
-            roi: "Maximiza la oferta disponible y mejora la calidad de los anuncios para aumentar la conversión.",
+            roi: "Aumento de la tasa de conversión y eficiencia de la inversión en marketing al optimizar la presentación del catálogo y enfocar los recursos en los productos de mayor impacto.",
             features: [
                 { name: "Integrador de Stock Virtual", code: "A.1", description: "Sincroniza el stock de tus proveedores con tu tienda Shopify, ampliando tu catálogo sin riesgo de inventario." },
                 { name: "Auditor de Calidad de Anuncios (KyQ)", code: "A.2", description: "Analiza y puntúa la calidad de tus fichas de producto (fotos, EANs, descripciones) para identificar puntos de mejora." },
                 { name: "Priorizador de SKUs para Marketing", code: "A.3, A.4", description: "Identifica tus productos más importantes basándose en hits de la web y ventas para optimizar la inversión en Google Ads y campañas." },
+                { name: "Gestor Inteligente de Colecciones", code: "A.5", description: "Ordena automáticamente los productos dentro de las colecciones de Shopify basándose en popularidad (hits), novedad o precio para maximizar la conversión." },
                 { name: "Hermanamiento de Productos por Variante", code: "A.7", description: "Vincula productos de la misma colección pero con distinto color/acabado para mejorar la experiencia de usuario y la navegación." }
             ]
         },
@@ -79,7 +79,7 @@ const planData = {
             description: "Monitoriza la salud de tu operación con alertas proactivas y consolida tus KPIs en un dashboard unificado para un control total del negocio.", 
             user: "CEO, COO, IT Manager", 
             status: "Funcional, requiere adaptación.",
-            roi: "Permite una toma de decisiones más rápida y basada en datos, reduciendo el riesgo operacional.",
+            roi: "Transforma datos brutos en inteligencia de negocio accionable, permitiendo una toma de decisiones estratégica basada en una visión completa y no fragmentada de la empresa.",
             features: [
                 { name: "Sistema de Alertas Operativas", code: "C.1-C.6", description: "Recibe reportes diarios por email que monitorizan la validez de certificados, el tamaño de las webs, la ejecución de procesos clave, etc." },
                 { name: "Análisis de Rentabilidad por Pedido", code: "D.1", description: "Consolida en una única vista el coste real del producto (FIFO), el coste de envío y el precio de venta para calcular el margen exacto por cada venta." },
@@ -294,7 +294,7 @@ const ProductView = () => {
                             <div className="h-64 mb-4">
                                 {uiMap[selectedModule.name]}
                             </div>
-                            <p className="text-sm text-green-400 font-semibold mb-4"><TrendingUp className="inline w-4 h-4 mr-1"/>ROI Demostrado: {selectedModule.roi}</p>
+                            <p className="text-sm text-green-400 font-semibold mb-4"><TrendingUp className="inline w-4 h-4 mr-1"/>Impacto de Negocio: {selectedModule.roi}</p>
                             
                             <ExpandableCard title="Ver Funcionalidades Clave">
                                 <div className="space-y-3 mt-2">
@@ -363,7 +363,7 @@ const FinancialsView = () => {
 
         for (let month = 1; month <= 36; month++) {
             // Acquisition model with slight growth factor
-            const marketingEfficiency = 1 + (month - 1) * 0.03;
+            const marketingEfficiency = 1 + (month - 1) * 0.045; // Increased efficiency
             const newPaidUsers = (monthlyMarketingSpend * marketingEfficiency) / cac;
             const churnedUsers = activeClients * (churn / 100);
             activeClients += newPaidUsers - churnedUsers;
